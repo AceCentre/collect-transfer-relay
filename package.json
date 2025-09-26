@@ -1,0 +1,30 @@
+{
+  "name": "collect-transfer-relay",
+  "version": "0.1.0",
+  "description": "Lightweight WebSocket fan-out relay for AsTeRICS Grid collect transfer",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start:allow-all": "cross-env AUTH_MODE=allow-all node ./src/server.js",
+    "lint": "node --check ./src/server.js",
+    "test": "node ./test/smoke.js"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "keywords": [
+    "asterics",
+    "grid",
+    "relay",
+    "websocket"
+  ],
+  "author": "AsTeRICS Grid Team",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
