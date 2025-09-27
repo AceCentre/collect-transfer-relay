@@ -1,7 +1,7 @@
 {
   "name": "collect-transfer-relay",
   "version": "0.1.0",
-  "description": "Lightweight WebSocket fan-out relay for AsTeRICS Grid collect transfer",
+  "description": "WebRTC signaling relay for AsTeRICS Grid collect transfer",
   "main": "src/server.js",
   "type": "commonjs",
   "scripts": {
@@ -22,9 +22,11 @@
   "author": "AsTeRICS Grid Team",
   "license": "MIT",
   "dependencies": {
+    "wrtc": "^0.4.7",
     "ws": "^8.18.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "node-pre-gyp": "^0.17.0"
   }
 }
